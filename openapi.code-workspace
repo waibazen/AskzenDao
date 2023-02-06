@@ -1,9 +1,11 @@
 {
-	"folders": [
-		{
-			"name": "openapi",
-			"path": "."
-		}
-	],
-	"settings": {}
+  "folders": [
+    {
+      "name": "openapi",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "githubPullRequests.ignoredPullRequestBranches": ["master"]
+  }
 }
