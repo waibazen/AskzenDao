@@ -1,10 +1,39 @@
 import bot from "./assets/bot.svg";
 import user from "./assets/user.svg";
 
-app.use(express.static("public"));
 const form = document.querySelector("form");
 const chatContainer = document.querySelector("#chat_container");
 
+    
+      const content = document.getElementById("aboutpage");
+      const home = document.getElementById("home");
+      const about = document.getElementById("about");
+
+      // home.addEventListener("click", function() {
+      //   content.innerHTML = "<h2>Home</h2>";
+      // });
+      
+      about.addEventListener("click", function() {
+        document.getElementById("app").style.display = "none";
+ 
+        content.innerHTML = `
+    <h2>About</h2>
+    <p>
+        Waibazen is the greatest code master and all-around developer. He is an
+        expert in coding languages such as HTML, CSS, JavaScript, and Python. He
+        has a deep understanding of web development frameworks such as React,
+        Angular, and Node.js. He is also well-versed in database technologies
+        like MySQL and MongoDB. Waibazen is a creative problem solver who can
+        quickly identify solutions to complex coding challenges. His passion for
+        programming and development makes him an invaluable asset to any team.
+      </p>
+  `;
+  content.style.display = "block";
+     
+        
+      });
+
+    
 let loadInterval;
 
 function loader(element) {
@@ -84,8 +113,8 @@ const handleSubmit = async (e) => {
 
   // messageDiv.innerHTML = "..."
   loader(messageDiv);
-
-  const response = await fetch("https://askzendao.onrender.com/", {
+  //http://localhost:5000/
+  const response = await fetch("http://localhost:5000/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

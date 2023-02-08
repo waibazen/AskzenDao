@@ -21,15 +21,9 @@ const openai = new OpenAIApi(configuration);
 const app = express();
 app.use(cors());
 app.use(express.json());
-// server css as static
-app.use(express.static(__dirname));
 
-// get our app to use body parser
-//app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/about.html");
-});
+
 
 app.get("/", async (req, res) => {
   res.status(200).send({
