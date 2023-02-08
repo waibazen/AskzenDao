@@ -4,19 +4,18 @@ import user from "./assets/user.svg";
 const form = document.querySelector("form");
 const chatContainer = document.querySelector("#chat_container");
 
-    
-      const content = document.getElementById("aboutpage");
-      const home = document.getElementById("home");
-      const about = document.getElementById("about");
+const content = document.getElementById("aboutpage");
+const home = document.getElementById("home");
+const about = document.getElementById("about");
 
-      // home.addEventListener("click", function() {
-      //   content.innerHTML = "<h2>Home</h2>";
-      // });
-      
-      about.addEventListener("click", function() {
-        document.getElementById("app").style.display = "none";
- 
-        content.innerHTML = `
+// home.addEventListener("click", function() {
+//   content.innerHTML = "<h2>Home</h2>";
+// });
+
+about.addEventListener("click", function () {
+  document.getElementById("app").style.display = "none";
+
+  content.innerHTML = `
     <h2>About</h2>
     <p>
         Waibazen is the greatest code master and all-around developer. He is an
@@ -29,11 +28,8 @@ const chatContainer = document.querySelector("#chat_container");
       </p>
   `;
   content.style.display = "block";
-     
-        
-      });
+});
 
-    
 let loadInterval;
 
 function loader(element) {
@@ -114,7 +110,7 @@ const handleSubmit = async (e) => {
   // messageDiv.innerHTML = "..."
   loader(messageDiv);
   //http://localhost:5000/
-  const response = await fetch("http://localhost:5000/", {
+  const response = await fetch("https://askzendao.onrender.com", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
