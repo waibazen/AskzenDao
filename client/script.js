@@ -18,12 +18,17 @@ about.addEventListener("click", function () {
   content.innerHTML = `
     <h2>About</h2>
     <p>
-    We are using a combination of deep learning models such as BERT, GPT-2, and XLNet to build this API.</p>
-    <p>
-
+    This is a demo project that utilizes the Da Vinci API from Open API.all of our fetch happens to this API via server built on express NodeJS and rendered in UI with VITE framework. 
+    <br></br>
+    Following is their interpretation of their API...
+    We are using a combination of deep learning models such as BERT, GPT-2, and XLNet to build this API.    
+    <br></br>
     Bert is a natural language processing (NLP) model developed by Google in 2018. It is based on a deep learning technique called Transformer and is used for a variety of tasks such as text classification, question answering, and language understanding. Bert has been shown to outperform existing NLP models on many tasks and has become the go-to model for many NLP applications.
+    <br></br>
     GPT-2 (Generative Pre-trained Transformer 2) is a large-scale unsupervised language model developed by OpenAI. It is trained on a dataset of 8 million webpages and can generate human-like text when given a prompt. GPT-2 has been used for various natural language processing tasks such as summarization, question answering, and machine translation.
+    <br></br>
     XLNet is a new state-of-the-art natural language processing (NLP) model developed by Google AI. It is an autoregressive language model that combines the advantages of both Transformer-XL and BERT models. XLNet uses a permutation language modeling objective to learn bidirectional contexts by maximizing the expected likelihood over all permutations of the factorization order. This allows it to capture longer-term dependencies than BERT, while still being more computationally efficient than Transformer-XL.
+    <br></br>
     </p>
       
   `;

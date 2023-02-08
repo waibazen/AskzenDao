@@ -185,13 +185,19 @@ form img {
   color: white;
 }
 #aboutpage {
+  display: flex;
+  align-items: center;
+  align-content: center;
   margin-top: 20px;
+  margin-bottom: 20px;
   padding: 5px;
-  width: 100%;
+  width: 90%;
 }
 
 #aboutpage p {
   background-color: #f2f2f2;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
 }
 #aboutpage h2 {
   background-color: #f2f2f2;
